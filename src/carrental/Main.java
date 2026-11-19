@@ -1,6 +1,9 @@
 package carrental;
+
+import carrental.backend.*;
+
 public class Main {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        CarList cars = CarList.getInstance();
     }
 }
