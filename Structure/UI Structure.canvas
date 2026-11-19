@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"d8c8070d5dad18f0","x":-460,"y":-420,"width":250,"height":170,"type":"text","text":"Login Page\n- User name\n- Password\n- PRESS ENTER\n- Quit"},
+		{"id":"39479bc763b58050","x":-1300,"y":-73,"width":250,"height":213,"type":"text","text":"SixtSeventh      Main Menu\n- Show cars\n- Logout\n- Quit"},
+		{"id":"e9336e3f2feb9238","x":320,"y":-73,"width":250,"height":253,"type":"text","text":"SixtSeventh      Main Menu\n- Show cars\n- Show financials\n- Show statistics\n- Show employees\n- Add / Remove Car\n- Logout\n- Quit"},
+		{"id":"4708f7890632b84f","x":-460,"y":-73,"width":250,"height":213,"type":"text","text":"SixtSeventh      Main Menu\n- Show cars\n- Show statistics\n- Add / Remove Car\n- Logout\n- Quit"},
+		{"id":"8afe6b00398151a6","x":-1300,"y":440,"width":250,"height":260,"type":"text","text":"All Cars\n- Add filters\n- List of all cars\n- Detailed View\n- Go back"},
+		{"id":"c3819dff215bbe0d","x":-833,"y":440,"width":393,"height":260,"type":"text","text":"Filters\n- Car type [All] (Sports, SUV, Pickup, Van)\n- Price [Any]\n- Is available [Yes] (Yes / No / Any)\n- Motor type [Any] (Electric, Combustion / Any)\n- Automatic [Any ] (Automatic, Manual / Any)\n- Back"},
+		{"id":"cb294017410324d9","x":-1409,"y":880,"width":468,"height":340,"type":"text","text":"![[Pasted image 20261119182915.png]]"}
+	],
+	"edges":[
+		{"id":"0f2304d36574047a","fromNode":"d8c8070d5dad18f0","fromSide":"bottom","toNode":"39479bc763b58050","toSide":"top","fromEnd":"arrow","label":"User\nLogout"},
+		{"id":"bc1c1baabc983d5c","fromNode":"d8c8070d5dad18f0","fromSide":"bottom","toNode":"4708f7890632b84f","toSide":"top","fromEnd":"arrow","label":"Employee\nLogout"},
+		{"id":"94bd6dea4b313a2a","fromNode":"d8c8070d5dad18f0","fromSide":"bottom","toNode":"e9336e3f2feb9238","toSide":"top","label":"Admin\nLogout"},
+		{"id":"ba1385892b320c4c","fromNode":"39479bc763b58050","fromSide":"bottom","toNode":"8afe6b00398151a6","toSide":"top","fromEnd":"arrow","label":"Show cars\nGo back"},
+		{"id":"b6c456a8ad374ec6","fromNode":"8afe6b00398151a6","fromSide":"right","toNode":"c3819dff215bbe0d","toSide":"left","fromEnd":"arrow","label":"Add filter\nBack"},
+		{"id":"495ed6f12f2daef6","fromNode":"8afe6b00398151a6","fromSide":"bottom","toNode":"cb294017410324d9","toSide":"top","fromEnd":"arrow","label":"Detailed View\nGo back"}
+	]
+}
