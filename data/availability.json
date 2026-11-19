@@ -1,0 +1,11 @@
+{
+    "notAvailable": [
+        {
+            "numberPlate": "GS-FN-67",
+            "from": "19.11.2026",
+            "to": "23.11.2026",
+            "reason": "maintenance",
+            "userID": 0
+        }
+    ]
+}
