@@ -1,0 +1,20 @@
+{
+    "cars": [
+        {
+            "ageRequirement": 21,
+            "brand": "BMW",
+            "category": "SUV",
+            "consumptionPer100km": 6.5,
+            "deposit": 500,
+            "doors": 4,
+            "forceInHorsePower": 550,
+            "kilometerPerDay": 200,
+            "motor": "Diesel",
+            "name": "BMW 3er",
+            "numberPlate": "GS-FN-67",
+            "pricePerDayInEuro": 100.00,
+            "seats": 5,
+            "transmission": "automatic"
+        }
+    ]
+}
