@@ -1,9 +1,9 @@
 package carrental;
 
-import carrental.backend.*;
+import carrental.ui.LoginManager;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        CarList cars = CarList.getInstance();
+        LoginManager.login();
     }
 }

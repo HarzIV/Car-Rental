@@ -4,13 +4,21 @@ package carrental.backend;
  * Handels all user related thing, for the currently logged in user.
  */
 public class User {
-    enum Role {
+    public enum Role {
         CLIENT,
         EMPLOYEE,
-        ADMIN
+        ADMIN;
+
+        @Override
+        public String toString() {
+            StringBuilder result = new StringBuilder(name().toLowerCase());
+            result.setCharAt(0, Character.toUpperCase(name().charAt(0)));
+
+            return result.toString();
+        }
     };
 
-    Role role = Role.ADMIN;
-    String userName = "67";
-    int userID = 0;
+    public Role role = Role.ADMIN;
+    public String userName = "67";
+    public int userID = 0;
 }
