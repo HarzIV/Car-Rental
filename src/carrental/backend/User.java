@@ -16,9 +16,17 @@ public class User {
 
             return result.toString();
         }
+
+        public static Role stringToEnum(String str) {
+            return switch(str.toUpperCase()) {
+                case "ADMIN" -> ADMIN;
+                case "EMPLOYEE" -> EMPLOYEE;
+                default -> CLIENT;
+            };
+        }
     };
 
-    public Role role = Role.ADMIN;
-    public String userName = "67";
-    public int userID = 0;
+    public Role role;
+    public String userName;
+    public int userID;
 }
