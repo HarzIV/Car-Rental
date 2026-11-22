@@ -16,7 +16,7 @@ import carrental.backend.User;
 /**
  * An abtraction layer for working with the users.json
  */ 
-public class UserList {
+public class UserRepository {
     private static final Path USERS_JSON_PATH = Path.of("data/users.json");
     private static final FormattingStyle JSON_FORMATTING_STYLE = FormattingStyle.PRETTY.withIndent("    ");
 
@@ -32,7 +32,7 @@ public class UserList {
      *          {@code false} if the user already exists or the JSON file was
      *          either not found or wrongly formatted.
      */
-    public static boolean create(String userName, String password, User.Role role) {
+    public static boolean createUser(String userName, String password, User.Role role) {
         String hashedPassword = Hash.sha256(password);
 
         // creation of the new json user object
@@ -82,7 +82,7 @@ public class UserList {
      *          not found, wrongly formatted or the userName or password
      *          was incorrect
      */
-    public static User authenticate(String userName, String password) {
+    public static User getUser(String userName, String password) {
         String hashedPassword = Hash.sha256(password);
 
         User result = null;
@@ -136,7 +136,7 @@ public class UserList {
      * @return  Returns {@code true} if the user was successfully removed or {@code false}
      *          if the JSON file was not found, wrongly formatted or the id doesn't exist.
      */
-    public static boolean delete(int id) {
+    public static boolean deleteUser(int id) {
         try {
             // reading the JSON file
             String jsonContent = Files.readString(USERS_JSON_PATH);
@@ -147,6 +147,7 @@ public class UserList {
 
             if (id < userArray.size()) {
                 userArray.remove(id);
+                
                 return false;
             }
 

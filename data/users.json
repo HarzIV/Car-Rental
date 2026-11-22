@@ -5,6 +5,11 @@
             "role": "Admin",
             "userID": 0,
             "userName": "admin"
+        },
+        {
+            "userName": "charla",
+            "hashedPassword": "26e576a4a2e4c11e2a0d03331bb19474e73bbdfd5189331776ff11df6cccf34b",
+            "role": "Employee"
         }
     ]
 }
