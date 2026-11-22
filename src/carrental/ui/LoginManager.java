@@ -15,10 +15,6 @@ public class LoginManager {
         System.out.print("Password: ");
         String password = new String(console.readPassword());
 
-        if (UserRepository.createUser(userName, password, User.Role.EMPLOYEE) == false) {
-            System.err.println("User couldn't be created.");
-        }
-
         User user = UserRepository.getUser(userName, password);
         if (user == null) {
             System.err.println("Authentication failed.");
